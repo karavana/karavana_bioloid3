@@ -100,7 +100,7 @@ class Bus:
         Rasises a bioloid.bus.BusError if an error occurs.
 
         """
-        pkt = Packet()
+        pkt = Packet(status_packet=True)
         received_bytes = []  # List to store received bytes for logging
         byte_index = 0  # Starting index for logging bytes
         while True:
